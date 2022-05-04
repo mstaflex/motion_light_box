@@ -1,0 +1,13 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  app:
+    environment:
+      - API_PORT=8000
+      - SERIAL_DEVICE=/dev/ttyACM0
+      - HASS_API_TOKEN
+      - HASS_DOMAIN
+    build: .
+    ports:
+      - "8000:8000"
+    devices:
+      - /dev/ttyACM0

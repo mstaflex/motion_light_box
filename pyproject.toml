@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "buschistreamlight"
+version = "0.1.0"
+description = ""
+authors = ["Jasper Büsch <j@buschi.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.75.2"
+pyserial = "^3.5"
+requests = "^2.27.1"
+uvicorn = "^0.17.6"
+fastapi-utils = "^0.2.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+start = "buschistreamlight.main:start"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
